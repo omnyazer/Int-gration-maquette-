@@ -1,0 +1,33 @@
+/* Styles pour la pagination au bas de la page */
+.footer {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    gap: 14px; 
+    padding: 20px;
+}
+
+.footer .prev, .footer .next {
+    font-size: 15px;
+    font-weight: bold;
+    color: #2c3e50;
+    cursor: pointer;
+}
+
+.footer .page {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #b0b0b0;
+    cursor: pointer;
+}
+
+.footer .page.active {
+    background-color: #514077; 
+    color: #ffffff;
+}

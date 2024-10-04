@@ -1,0 +1,103 @@
+/* Styles pour les cards colorées + texte dashboard */
+body {
+    background-color: #f7f8fa; 
+}
+
+.main-container {
+    display: flex;
+}
+
+.cards-section {
+    width: 80%;
+    padding: 20px;
+}
+
+.cards-section h2 {
+    margin-bottom: 20px; 
+    margin-top: 10px; 
+    color: #1F384C; 
+    font-weight: 500; 
+    margin-left: 15px;
+
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes égales pour grands écrans */
+    gap: 30px;
+    padding: 0 20px; 
+}
+
+.card {
+    background-color: #ffffff; 
+    border-radius: 10px;
+    padding: 10px;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 75px; 
+}
+
+
+.arrow {
+    color: #149D52; 
+    font-size: 12px; 
+    margin-left: 8px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.arrow i {
+    margin-right: 4px; 
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px; 
+}
+
+.text-content h3 {
+    font-size: 17px; 
+    margin-bottom: 7px;
+    font-weight: 600;
+    color: #1F384C;
+}
+
+.text-content p {
+    font-size: 13px; 
+    color: #767d87;
+}
+
+.image-content {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.image-content img {
+    width: 40px; 
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.fa-solid  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Pour écran mobile */
+@media (max-width: 576px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales pour les petits écrans */
+    }
+
+    .card {
+        justify-content: center; 
+    }
+}

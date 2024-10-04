@@ -1,0 +1,65 @@
+/* Styles pour la sidebar et le menu */
+.sidebar {
+    width: 230px;
+    background-color: #eceef2;
+    padding: 20px;
+}
+
+.menu-section h3, .system-section h3 {
+    font-size: 12px;
+    color: #908585;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.system-section h3 {
+    margin-left: 15px;
+    margin-top: 15%;
+}
+
+
+
+.menu-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #767d87;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    flex-wrap: wrap;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.menu-list li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.menu-list li.active {
+    background-color: #cccbda;
+    color: #514077;
+}
+
+.menu-list li:hover {
+    background-color: #cccbda;
+    cursor: pointer;
+}
+
+
+/* Pour écran mobile */
+@media (max-width: 576px) {
+    .menu-list li {
+        font-size: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-list li img {
+        margin-bottom: 15px;
+    }
+}

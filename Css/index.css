@@ -1,0 +1,20 @@
+/* Styles de la page */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f5f7;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    min-height: 100vh; 
+    padding-top: 65px; 
+
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f5f7;
+}

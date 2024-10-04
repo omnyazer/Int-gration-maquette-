@@ -1,0 +1,86 @@
+/* Styles pour le tableau */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f5f7;
+    margin: 0;
+    padding: 0;
+}
+
+.overview-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.section-header {
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    color: #536776;
+    font-size: 18px;
+}
+
+.search-container input {
+    border: 1px solid #F3F6F9;
+    border-radius: 5px;
+    padding: 14px;
+    font-size: 14px;
+    width: 150px;
+    background-color: #F6F8FA;
+    color: #767d87;
+}
+
+.grid-table {
+    display: grid;
+    grid-template-columns: 0.3fr 1.5fr 1fr 1fr 1fr; /* les colonnes ont différentes tailles*/
+    gap: 0; 
+    white-space: nowrap; 
+}
+
+.grid-row {
+    display: contents; /* Gérer chaque cellule individuellement */
+}
+
+.grid-cell {
+    padding: 15px;
+    color: #536776;
+    font-size: 14px;
+}
+
+.header .grid-cell {
+    font-weight: 600;
+    background-color: #F3F6F9;
+    border-bottom: 2px solid #eceef2;
+}
+
+.grid-row:nth-child(odd) .grid-cell {
+    background-color: #F3F6F9;
+}
+
+
+
+/* Pour écran mobile */
+@media (max-width: 768px) {
+    .grid-table {
+        grid-template-columns: 0.3fr 1.5fr 1fr 1fr 1fr; 
+        overflow-x: auto; 
+    }
+
+    .grid-cell {
+        white-space: nowrap; 
+    }
+
+    .section-header {
+        grid-template-columns: 1fr; /* Une colonne pour que la barre passe sous le titre */
+        row-gap: 10px; 
+    }
+
+   
+}
